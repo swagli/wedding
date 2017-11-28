@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>挚爱首页</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--背景音乐-->
+<audio src="audio/bgMusic.mp3" autoplay loop></audio>
+<!--导航条/navbar-->
+<div class="navbar navbar-new"  id="nav">
+    <div class="container">
+        <div class="navbar-header ">
+            <a href="javascript:;" class="navbar-brand my-login" title="挚爱"></a>
+            <a class="navbar-toggle" data-toggle="collapse" href="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <!--折叠部分-->
+        <div id="menu" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp首页</a></li>
+                <li><a href="product_details.html" target="_self" ><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp优惠套餐</a></li>
+                <li><a href="detail.html" target="_self"><span class="glyphicon glyphicon-picture"></span>&nbsp客片大赏</a></li>
+                <li><a href="#customMsg"><span class="glyphicon glyphicon-envelope"></span>&nbsp粉丝评价</a></li>
+                <li><a href="demo.html" target="_self"><span class="glyphicon glyphicon-heart"></span>&nbsp风格样片</a></li>
+            </ul>
+            <!--右侧导航菜单-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="modal"  href="#modal-login">登录</a></li>
+                <span class="navbar-text  hidden-xs">|</span>
+                <li><a data-toggle="modal"  href="#modal-register">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--广告轮播/carousel-->
+<div class="container">
+    <div id="ad" class="carousel" data-ride="carousel" data-interval="3000" data-pause="null">
+        <div class="carousel-inner" id="banner">
+            <div class="item active">
+                <a href="banner.html?bid=1">
+                    <img src="img/banner/1.jpg" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="banner.html?bid=2">
+                    <img src="img/banner/2.jpg" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="banner.html?bid=3">
+                    <img src="img/banner/3.jpg"/>
+                </a>
+            </div>
+            <div class="item">
+                <a href="banner.html?bid=4">
+                    <img src="img/banner/4.jpg" />
+                </a>
+            </div> 
+        </div>
+        <!--上一页/下一页-->
+        <a href="#ad" class="carousel-control left" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#ad" class="carousel-control right" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <!--分页页码-->
+        <ul class="carousel-indicators" >
+            <li data-slide-to="0" data-target="#ad" class="active"></li>
+            <li data-slide-to="1" data-target="#ad"></li>
+            <li data-slide-to="2" data-target="#ad"></li>
+            <li data-slide-to="3" data-target="#ad"></li>
+        </ul>
+    </div>
+</div>
+<br>
+<!-- 关于我们/About -->
+<div id="about" class="about_us">
+   <div class="container">
+	   <div class="row" style="margin-bottom:20px">
+           <div class="col-md-12 col-offset-2" style="text-align:center">
+               <p style="font-size:25px;font-weight:bold;margin:0;">ABOUT US</p>
+               <h3 style="font-size:16px;margin:0;">关于我们</h3>
+           </div>
+       </div>
+      <div class="row">
+         <div class="col-md-8 col-md-offset-2 ">
+            <p class="lead">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;挚爱婚纱摄影创立于2017年，
+                致力于为每一对新人提供专业的婚纱摄影和浪漫婚礼仪式服务，时尚的设计走向和创新思维的摄影理念，全面高端、个性化的配套设，国际最新流行品牌婚纱礼服，全方位的细致周到的贴身服务，彰显尊荣，带给即将结婚新人们以尊贵的高档享受和品味。
+            </p>
+         </div>
+      </div>
+   </div><hr>
+</div>
+<!--联系方式/contact-->
+<div class="content">
+    <div class="bottom"></div>
+    <div class="online"></div>
+    <div class="tel"></div>
+    <div class="qq"></div>
+    <div class="top"></div>
+    <div class="phone" style="left:-56px;opacity:0;top:116px;"></div>
+    <div class="qrcode" style="left:-56px;opacity:0;top:223px;"></div>
+</div>
+<!--客片大赏/customeShow-->
+<div class="container" id="Grid">
+    <div class="row" style="margin-bottom:20px">
+        <div class="col-md-12 col-offset-2" style="text-align:center">
+            <p style="font-size:25px;font-weight:bold;margin:0;">GUEST DISPLAY</p>
+            <h3 style="font-size:16px;margin:0;">客片大赏</h3>
+        </div>
+	</div>
+	<div class="row">
+	    <div class="col-xs-6 col-md-3">
+		    <div class="overlay">
+            <img src="img/demo/2-1.jpg"/>
+            <div class="my-shadow">
+               <img src="img/demo/link.png" alt=""/>
+			      </div>
+		    </div>
+        </div>
+        <div class=" col-xs-6 col-md-3">
+            <div  class="overlay">
+                <img src="img/demo/1-5.jpg" />
+                <div class="my-shadow">
+                    <img src="img/demo/link.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class=" col-xs-6 col-md-3">
+		    <div  class="overlay">
+						 <img src="img/demo/2-7.jpg" />
+						 <div class="my-shadow">
+								 <img src="img/demo/link.png" alt=""/>
+						 </div>
+	    	</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+		    <div  class="overlay">
+              <img src="img/demo/2-6.jpg" />
+              <div class="my-shadow">
+                  <img src="img/demo/link.png" alt=""/>
+              </div>
+           </div>
+       </div>
+	</div>
+	<br>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+           <div class="overlay">
+                <img src="img/demo/1-10.jpg"  />
+                <div class="my-shadow">
+                    <img src="img/demo/link.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class=" col-xs-6 col-md-3">
+           <div  class="overlay">
+                 <img src="img/demo/1-9.jpg" />
+                 <div class="my-shadow">
+                     <img src="img/demo/link.png" alt=""/>
+                 </div>
+           </div>
+        </div>
+        <div class=" col-xs-6 col-md-3">
+            <div  class="overlay">
+                <img src="img/demo/1-1.jpg" />
+                <div class="my-shadow">
+                    <img src="img/demo/link.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div  class="overlay">
+                <img src="img/demo/2-4.jpg" />
+                <div class="my-shadow">
+                    <img src="img/demo/link.png" alt=""/>
+                </div>
+            </div>
+        </div>
+	  </div>
+</div>
+<hr>
+<!--风格样片/show-->
+<div id="carousel" class="container">
+    <div class="row" style="margin-bottom:20px">
+        <div class="col-md-12 col-offset-2" style="text-align:center">
+            <p style="font-size:25px;font-weight:bold;margin:0;">SAMPLE DISPLAY</p>
+            <h3 style="font-size:16px;margin:0;">风格样片</h3>
+        </div>
+    </div>
+   <div class="main row">
+        <div class="col-md-12 banner active">
+           <img src="img/activity/1-1.jpg" alt="" />
+        </div>
+        <div class=" col-md-12 banner">
+           <img src="img/activity/2-1.jpg" alt="" />
+        </div>
+        <div class="col-md-12 banner">
+           <img src="img/activity/3-1.jpg" alt="" />
+        </div>
+        <div class="col-md-12 banner">
+           <img src="img/activity/4-1.jpg" alt="" />
+        </div>
+   </div>
+   <hr>
+   <div class=" row banner-nav">
+        <div class="col-xs-6 col-md-3 bg out">
+            <img src="img/activity/1.jpg"  title="<< 复古中国红 >>">
+        </div>
+        <div  class="col-xs-6 col-md-3 bg">
+            <img src="img/activity/2.jpg" title="<< 唯美清新 >>">
+        </div>
+        <div  class="col-xs-6 col-md-3 bg">
+            <img src="img/activity/3.jpg"   title="<< 潮流街拍 >>">
+        </div>
+        <div  class="col-xs-6 col-md-3 bg">
+            <img src="img/activity/4.jpg"  title="<<韩式潮流>>">
+        </div>
+     </div>
+   </div>
+</div>
+<hr>
+<!--优惠套餐-->
+<div class="container">
+    <div class="row" style="margin-bottom:20px">
+        <div class="col-md-12 col-offset-2" style="text-align:center">
+            <p style="font-size:25px;font-weight:bold;margin:0;">YOUR CHOICE</p>
+            <h3 style="font-size:16px;margin:0;">精选套餐</h3>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container" id="product">
+   <!--用js动态引入-->
+</div>
+<hr>
+<!--粉丝评价-->
+<div class="container" id="customMsg">
+    <div class="row" style="margin-bottom:20px">
+       <div class="col-md-12 col-offset-2" style="text-align:center">
+            <p style="font-size:25px;font-weight:bold;margin:0;">CUSTOMER REVIEWS</p>
+            <h3 style="font-size:16px;margin:0;">真实客户评价</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 assess">
+            好久之前就关注了挚爱，经过了再三的对比我选择了在挚爱店进行拍摄。第一天到三亚干就好门前，但是接待的人是东北的好热气球，
+            然后我们就上了车前往门店选礼服。礼服真的部分区域随便挑哦。先是门市帮我分...
+            <img src="img/assess/061517579950.jpg_80x80.jpg">
+            <p>@小丫爱霖</p><p class="fs12 ct1 lh12">OUR CUSTOMERS SAY</p>
+        </div>
+        <div class="col-md-4 assess" >
+            在网上关注了好几家婚纱店，经朋友推荐和对比，纠结了好久才确定在挚爱店拍婚纱照。4月30日，我们到店顺利选好了场景和礼服，
+            充满期待的准备第二天的拍摄…第二天6点多就开始化妆做造型，一直到晚上12点多...
+           <img src="img/assess/061516128195.jpg_80x80.jpg" >
+           <p>@我是李圆圆</p><p class="fs12 ct1 lh12">OUR CUSTOMERS SAY</p>
+        </div>
+        <div class="col-md-4 assess">
+            今天520，是我们在挚爱婚纱照拍摄非常辛苦的一天，我和老公从早上五点多起床到现在入住在君澜酒店，整个拍摄过程中非常的顺利，
+            由衷感谢摄影师波波老师，化妆师阿啦武老师，以及可爱的小助理老师，他们真的特...
+            <img src="img/assess/061504294661.jpg_80x80.jpg" >
+            <p>@骨头的多肉</p><p class="fs12 ct1 lh12">OUR CUSTOMERS SAY</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="text-align:center">
+            <h4 style="margin-top:30px">
+                <a href="assess.html" target="_self">>> 点击查看更多 <<</a>
+            </h4>
+        </div>
+    </div>
+</div>
+<br><br>
+<!--登录模态框/login-->
+<div class="modal fade" id="modal-login">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-dismiss="modal">×</span>
+                <h4 class="modal-title">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal"  method="post" >
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label class="control-label" for="uname">用户名</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="uname" name="uname" placeholder='请输入用户名（字母数字3~8位）' class="form-control"/>
+                            <span id="tips"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label class=control-label" for="upwd">密码</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="password" id="upwd" name="upwd" placeholder='请输入用户名（字母数字3~8位）'  class="form-control"/>
+                            <span id="tips2"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-1">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"/>七天免密登录
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-1">
+                              <input type="button"  class="btn btn-success" id="login" value="登录">
+                            <a href="javascript:;"  class="btn btn-danger" id="cancel">取消</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--注册模态框/register-->
+<div class="modal fade" id="modal-register">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-dismiss="modal">×</span>
+                <h4 class="modal-title">用户注册</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="form" method="post" >
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="control-label" for="uname">用户名</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" id="uname2" name="uname2" placeholder="请输入用户名（字母数字3~8位）" class="form-control"/>
+                            <span id="tip3"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="control-label" for="upwd">登录密码</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="password" id="upwd2" name="upwd2" placeholder="请输入密码（字母数字3~8位）" class="form-control"/>
+                            <span id="tip4"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="control-label" for="upwd">确认密码</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="password" id="upwd3" name="upwd3" placeholder="请输入密码" class="form-control"/>
+                            <span id="tip5"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="control-label">电子邮件</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="email"  name="email" id="el" placeholder="请输入邮箱" class="form-control"/>
+                            <span id="tip6"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <input type="button"  class="btn btn-success" id="register" value="注册">
+                            <a href="javascript:;"  class="btn btn-danger" id="cancel2">取消</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--引入的底部-->
+<div id="footer"></div>
+<!--消息弹出框-->
+<div id="message"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/bootlint.js"></script>-->
+<script src="js/index.js"></script>
+<script src="js/login.js"></script>
+<script src="js/register.js"></script>
+<script src="js/product.js"></script>
+<!--<script>-->
+    <!--bootlint.showLintReportForCurrentDocument([]);-->
+<!--</script>-->
+</body>
+</html>

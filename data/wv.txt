@@ -1,0 +1,91 @@
+ CREATE DATABASE wv CHARSET=UTF8;
+ USE wv;
+ CREATE TABLE user(
+   uid INT PRIMARY KEY AUTO_INCREMENT,
+   uname VARCHAR(20) UNIQUE NOT NULL,
+   upwd  VARCHAR(32) NOT NULL,
+   email VARCHAR(32) NOT NULL
+ );
+
+ INSERT INTO user VALUES(NULL,'tom','123','tom@qq.com');
+ INSERT INTO user VALUES(NULL,'jerry','123456','jerry@qq.com');
+ INSERT INTO user VALUES(NULL,'mary','1214','mary@qq.com');
+ INSERT INTO user VALUES(NULL,'dongdong','5566','dongdong@qq.com');
+ INSERT INTO user VALUES(NULL,'dingding','456789','dingding@qq.com');
+
+ CREATE TABLE banner_detail(
+    `d_id` int(11) NOT NULL AUTO_INCREMENT,
+    `bid` int(11) DEFAULT NULL,
+    `img` varchar(128) DEFAULT NULL,
+     PRIMARY KEY  (`d_id`)
+ );
+ INSERT INTO `banner_detail` VALUES ('1', '1','img/banner/1-1.jpg');
+ INSERT INTO `banner_detail` VALUES ('2', '1','img/banner/1-2.jpg');
+ INSERT INTO `banner_detail` VALUES ('3', '1','img/banner/1-3.jpg');
+ INSERT INTO `banner_detail` VALUES ('4', '1','img/banner/1-4.jpg');
+ INSERT INTO `banner_detail` VALUES ('5', '1','img/banner/1-5.jpg');
+ INSERT INTO `banner_detail` VALUES ('6', '1','img/banner/1-6.jpg');
+ INSERT INTO `banner_detail` VALUES ('7', '2','img/banner/2-1.jpg');
+ INSERT INTO `banner_detail` VALUES ('8', '2','img/banner/2-2.jpg');
+ INSERT INTO `banner_detail` VALUES ('9', '2','img/banner/2-3.jpg');
+ INSERT INTO `banner_detail` VALUES ('10', '2','img/banner/2-4.jpg');
+ INSERT INTO `banner_detail` VALUES ('11', '2','img/banner/2-5.jpg');
+ INSERT INTO `banner_detail` VALUES ('12', '2','img/banner/2-6.jpg');
+ INSERT INTO `banner_detail` VALUES ('13', '3','img/banner/3-1.jpg');
+ INSERT INTO `banner_detail` VALUES ('14', '3','img/banner/3-2.jpg');
+ INSERT INTO `banner_detail` VALUES ('15', '3','img/banner/3-3.jpg');
+ INSERT INTO `banner_detail` VALUES ('16', '3','img/banner/3-4.jpg');
+ INSERT INTO `banner_detail` VALUES ('17', '3','img/banner/3-5.jpg');
+ INSERT INTO `banner_detail` VALUES ('18', '3','img/banner/3-6.jpg');
+ INSERT INTO `banner_detail` VALUES ('19', '4','img/banner/4-1.jpg');
+ INSERT INTO `banner_detail` VALUES ('20', '4','img/banner/4-2.jpg');
+ INSERT INTO `banner_detail` VALUES ('21', '4','img/banner/4-3.jpg');
+ INSERT INTO `banner_detail` VALUES ('22', '4','img/banner/4-4.jpg');
+ INSERT INTO `banner_detail` VALUES ('23', '4','img/banner/4-5.jpg');
+ INSERT INTO `banner_detail` VALUES ('24', '4','img/banner/4-6.jpg');
+
+ CREATE TABLE product(
+  `pid` int(11) NOT NULL AUTO_INCREMENT,
+  `title`  varchar(64) DEFAULT NULL,
+  `title2`  varchar(64) DEFAULT NULL,
+  `pic` varchar(128) DEFAULT NULL,
+  `newPrice` decimal(10,2) DEFAULT NULL,
+  `oldPrice`  decimal(10,2) DEFAULT NULL,
+  `href` varchar(128) DEFAULT NULL,
+   PRIMARY KEY  (`pid`)
+ );
+
+INSERT INTO `product` VALUES ('1', '11.11全球狂欢节','资深','img/product/1.jpg', '6988.00','8980', 'product_details.html?pid=1');
+INSERT INTO `product` VALUES ('2', '《博美系列》','资深','img/product/2.jpg', '8988.00','10980', 'product_details.html?pid=2');
+INSERT INTO `product` VALUES ('3', '2017全新《MOON II》','首席','img/product/3.jpg', '10988.00', '12980','product_details.html?pid=3');
+INSERT INTO `product` VALUES ('4', '《natureII》系列','总监','img/product/4.jpg', '15988.00', '18980','product_details.html?pid=4');
+
+CREATE TABLE product_pic(
+  `pic_id` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) DEFAULT NULL,
+  `lg` varchar(128) DEFAULT NULL,
+  `sm` varchar(128) DEFAULT NULL,
+   PRIMARY KEY  (`pic_id`)
+); 
+
+INSERT INTO `product_pic` VALUES ('1', '1', 'img/product/lg/1-1.jpg', 'img/product/sm/1-1.jpg');
+INSERT INTO `product_pic` VALUES ('2', '1', 'img/product/lg/1-2.jpg', 'img/product/sm/1-2.jpg');
+INSERT INTO `product_pic` VALUES ('3', '1', 'img/product/lg/1-3.jpg', 'img/product/sm/1-3.jpg');
+INSERT INTO `product_pic` VALUES ('4', '1', 'img/product/lg/1-4.jpg', 'img/product/sm/1-4.jpg');
+INSERT INTO `product_pic` VALUES ('5', '1', 'img/product/lg/1-5.jpg', 'img/product/sm/1-5.jpg');
+INSERT INTO `product_pic` VALUES ('6', '2', 'img/product/lg/2-1.jpg', 'img/product/sm/2-1.jpg');
+INSERT INTO `product_pic` VALUES ('7', '2', 'img/product/lg/2-2.jpg', 'img/product/sm/2-2.jpg');
+INSERT INTO `product_pic` VALUES ('8', '2', 'img/product/lg/2-3.jpg', 'img/product/sm/2-3.jpg');
+INSERT INTO `product_pic` VALUES ('9', '2', 'img/product/lg/2-4.jpg', 'img/product/sm/2-4.jpg');
+INSERT INTO `product_pic` VALUES ('10', '2', 'img/product/lg/2-5.jpg', 'img/product/sm/2-5.jpg');
+INSERT INTO `product_pic` VALUES ('11', '3', 'img/product/lg/3-1.jpg', 'img/product/sm/3-1.jpg');
+INSERT INTO `product_pic` VALUES ('12', '3', 'img/product/lg/3-2.jpg', 'img/product/sm/3-2.jpg');
+INSERT INTO `product_pic` VALUES ('13', '3', 'img/product/lg/3-3.jpg', 'img/product/sm/3-3.jpg');
+INSERT INTO `product_pic` VALUES ('14', '3', 'img/product/lg/3-4.jpg', 'img/product/sm/3-4.jpg');
+INSERT INTO `product_pic` VALUES ('15', '3', 'img/product/lg/3-5.jpg', 'img/product/sm/3-5.jpg');
+INSERT INTO `product_pic` VALUES ('16', '4', 'img/product/lg/4-1.jpg', 'img/product/sm/4-1.jpg');
+INSERT INTO `product_pic` VALUES ('17', '4', 'img/product/lg/4-2.jpg', 'img/product/sm/4-2.jpg');
+INSERT INTO `product_pic` VALUES ('18', '4', 'img/product/lg/4-3.jpg', 'img/product/sm/4-3.jpg');
+INSERT INTO `product_pic` VALUES ('19', '4', 'img/product/lg/4-4.jpg', 'img/product/sm/4-4.jpg');
+INSERT INTO `product_pic` VALUES ('20', '4', 'img/product/lg/4-5.jpg', 'img/product/sm/4-5.jpg');
+

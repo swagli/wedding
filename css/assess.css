@@ -1,0 +1,133 @@
+*{
+    list-style:none;
+    text-decoration:none;
+    padding:0;
+    margin:0;
+}
+div{
+    color:#000;
+}
+ul li a:hover{
+    text-decoration:none;
+}
+
+/*******粉丝评价内容*********/
+.content{
+    width:78.125%;
+    margin:0 auto;
+    min-width:1200px;
+}
+.blk80{
+    height:80px;
+}
+.ertcon3 .blk80:hover{
+    text-decoration:none;
+}
+.ert{
+    position:relative;
+    height:163px;
+    width:630px;
+    margin:0 auto;
+    text-align:center;
+}
+.ct5,.ct6{
+    color:#000;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+}
+.ertcon3{
+    background:url(../img/assess/title3.png) no-repeat center;
+    height:153px;
+    width:630px;
+}
+.fs25 {
+    font-size: 25px;
+}
+.lightbox2{
+    width:380px;
+    height:350px;
+}
+.tac{
+    text-align:center;
+}
+.pl ul li {
+    float:left;
+    width:33.3%;
+    margin-bottom:50px;
+}
+.pl ul li img{
+    border-radius:50%;
+    margin-top:15px;
+    margin-bottom:10px;
+    width:80px;
+    height:80px;
+}
+.pl ul li .plcon {
+    background: url(../img/assess/p2.png) no-repeat top;
+    background-size:100% 100%;
+    height:200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:40px;
+}
+.tal{
+    text-align:left;
+}
+.fs12{
+    font-size:12px;
+}
+.lh12{
+    line-height:1.2;
+}
+.clh{
+    height:0px;
+    overflow:hidden;
+    clear:both;
+}
+.bb1{
+    border-bottom:1px solid #CCC;
+    width:100%;
+}
+.mpage{
+    position:fixed;
+    left:0px;
+    top:45%;
+    width:56px;
+    height:450px;
+    z-index:100;;
+}
+.fs16{
+    font-size:16px;
+}
+.mpage li{
+    dispaly:inline;
+    padding:8px;
+}
+.mpage .ppage a{
+    display:inline-block;
+    line-height:38px;
+    width:38px;
+    text-align:center;
+    border:1px solid #999;
+    font-size:18px;
+    color:#000;
+}
+/******1  2   3 点击事件*******/
+.box{
+    display:none;
+}
+.box.active {
+    display:block;
+}
+.active.ppage a{
+    background-color: #C6A65B;
+    text-decoration:none;
+}
+.active  a:hover{
+    text-decoration:none;
+}
+.tal:hover{
+    border:3px solid  #C6A65B;
+}

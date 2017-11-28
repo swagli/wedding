@@ -1,0 +1,71 @@
+
+.portfolio {
+    background: #f1f1f1;
+}
+.gallery {
+    overflow: hidden;
+}
+#Grid .mix {
+    max-height: 230px;
+}
+.gallery .mix {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 0 0 30px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+}
+.gallery a.mix-cover, .gallery span.cover {
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 0 0;
+    display: block;
+    overflow: hidden;
+}
+.gallery .mix a img {
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.modal-content{
+    margin-top:200px;
+    opacity:0.95;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+/*Êó±êÐüÍ£Ê±Í¼Æ¬Ðý×ª*/
+img:hover{
+    cursor:pointer;
+    animation:change 3s linear;
+}
+@keyframes change{
+    0%{
+        transform:rotateY(0deg);
+    }
+    50%{
+        transform:rotateY(180deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+
+}
+/*Í¼Æ¬Ä£Ì¬¿ò*/
+.modal {
+  background-color:rgba(0,0,0,0.6);
+}
+
+.modal-body> img{
+    text-align:center;
+    width:320px;
+}
+li{
+  display:inline-block;
+  opacity:1;
+}
+
+img:hover{
+  background-color:rgba(0,0,0,0.6);
+}

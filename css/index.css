@@ -1,0 +1,239 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ul li{
+    list-style:none;
+    text-decoration:none;
+}
+a:hover{
+    cursor:pointer;
+}
+/*****响应式固定导航条*******/
+#nav{
+    position:fixed;
+    z-index:2;
+    width:100%;
+}
+.navbar-new{
+    background-color:rgba(0,0,0,0.5);
+    height:60px;
+}
+.navbar-new a{
+    color:#fff;
+    line-height:29px;
+    font-size:16px;
+}
+.navbar-new a:hover{
+    background-color:#fff;
+    color:#000;
+}
+.my-login a{
+   font-size:25px;
+}
+.nav li a{
+    line-height:30px;
+}
+.my-login,h2{
+   font-family: Blackadder ITC;
+}
+
+span.icon-bar{
+   border:1.5px solid #fff;
+   color:#fff;
+}
+/******品牌介绍*******/
+.lead{
+    font:20px "������κ";
+}
+/*****点击客片背景图片显示*****/
+.overlay {
+    width:228px;
+    height:271px; 
+    position: relative;
+    overflow: hidden;
+}
+.my-shadow{
+	 width:228px;
+	 height:271px;
+	 position: absolute;
+	 background: rgba(0, 0, 0, 0.55);
+	 padding: 1em;
+	 bottom:400px;
+	 opacity:0;
+}
+.my-shadow img{
+   position: absolute;
+   top: 115px;
+   left: 100px;
+}
+/****风格样片的轮播ʾ****/
+
+#carousel{
+    margin:0 auto;
+}
+.banner{
+    display:none;
+}
+.active{
+    display:block;
+}
+.bg.out img{
+    border-bottom:7px solid #C6A65B;
+    border-top:7px solid #C6A65B;
+    opacity:1;
+}
+.banner img{
+    width:100%;
+}
+.bg img{
+    width:270px;
+    height:160px;
+    opacity:.5;
+}
+/*****左侧固定导航条******/
+.content{
+    position:fixed;
+    left:0px;
+    top:25%;
+    width:56px;
+    height:450px;
+    z-index:100;
+}
+.content div{
+    cursor:pointer;
+}
+.online{
+    width:56px;
+    height:118px;
+    background:url(../img/contact/online.gif) no-repeat center center;
+}
+.tel{
+    width:56px;
+    height:107px;
+    background:url(../img/contact/tel.gif) no-repeat center center;
+}
+.qq{
+    width:56px;
+    height:96px;
+    background:url(../img/contact/qq.gif) no-repeat center center;
+}
+.top{
+    width:56px;
+    height:45px;
+    background:url(../img/contact/top.gif) no-repeat center center;
+}
+.bottom{
+    width:56px;
+    height:45px;
+    background:url(../img/contact/bottom.gif) no-repeat center center;
+}
+.qrcode{
+    width:117px;
+    height:118px;
+    background:url(../img/contact/qq.png) no-repeat center center;
+    position:absolute;
+    z-index:-1;
+}
+.phone{
+    width:250px;
+    height:110px;
+    background:url(../img/contact/tel.png) no-repeat center center;
+    position:absolute;
+    z-index:-1;
+}
+/****套餐样式*******/
+.rt{
+  margin-bottom:20px;
+}
+h3{
+    color: #333;
+    font-size: 14px;
+}
+h3 em{
+    max-width: 176px;
+    height: 23px;
+    line-height:23px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}
+h3 span{
+    border: 1px solid rgba(255,102,51,.5);
+    border-radius: 2px;
+    line-height: 16px;
+    color: #f63;
+    font-size: 12px;
+    padding: 0 5px;
+    margin-left: 6px;
+}
+h4{
+    margin-bottom: 3px;
+    margin-top: 9px;
+}
+h4 span{
+    font-size:24px;
+}
+.newPrice em{
+    font-size: 16px;
+    margin-right: -3px;
+    margin-left: -2px;
+}
+.oldPrice {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #999;
+    margin-left: 7px;
+}
+h5{
+    color: #999;
+    overflow: hidden;
+    margin-top: 10px;
+}
+dd{
+    margin-right: 15px;
+    float: left;
+}
+dd span{
+    color:#333;
+}
+
+/*****粉丝评价******/
+.assess{
+    margin-top:20px;
+    text-align:center;
+    background: url(../img/assess/p2.png) no-repeat top;
+    background-size:380px 280px;"
+}
+.assess:hover{
+    border:3px solid  #C6A65B;
+}
+.assess img{
+    border-radius:50%;
+    margin-top:20px;
+    backgroun-size:80px 80px;
+}
+h4 a:hover{
+    text-decoration:none;
+}
+/*****登录注册模态框样式ʽ*****/
+#modal-login,#modal-register{
+    background:rgba(0,0,0,0.6);
+}
+.modal-content{
+    width:460px;
+    margin-top:250px;
+    text-align:center;
+    opacity:0.9;
+}
+.error{
+    color:red;
+}
+.ok{
+    color:green;
+}

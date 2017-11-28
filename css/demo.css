@@ -1,0 +1,34 @@
+
+/*****套装风格点击******/
+*{
+    list-style:none;
+    text-decoration:none;
+}
+#navigation{
+    margin:10px 0px 10px 80px;
+    font-size:16px;
+    font-weight:bold;
+}
+.active  a{
+    color: #e4393c;
+    font-weight: bold;
+    margin-top:80px;
+    text-decoration:none;
+}
+ a:hover{
+    text-decoration:none;
+    outline:none;
+}
+.container .box{
+    display:none;
+}
+.container .box.active {
+    display:block;
+}
+.box img{
+    width:258px;
+    height:382px;
+}
+
+
+

@@ -1,0 +1,146 @@
+*{
+    list-style:none;
+    text-decoration:none;
+}
+#msg{
+    width:400px;
+    height:480px;
+    position:fixed;
+    z-index:100;
+    right:0px;
+    bottom:-470px;
+    transition:all 1s linear;
+}
+#msg .header .logo{
+    margin-top:20px;
+    color:#000;
+    float:left;
+    margin-left:10px;
+    margin-bottom:10px;
+    text-align:center;
+    font-size:16px;
+}
+.header{
+    background:lightblue;
+    width:400px;
+    height:60px;
+}
+.header > img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    float:left;
+    margin-top:6px
+}
+#msg ul li{
+    float:right;
+    margin-right:20px;
+    margin-top:20px;
+}
+#msg ul li a:hover{
+    test-decoration:none;
+    color:#ffffff;
+}
+#close{  text-decoration:none;  }
+.box-body {
+    background-color: #fff;
+    width:400px;
+    height:350px;
+}
+.message-img{
+    width:250px;
+    height:150px;
+    margin-top:6px;
+    margin-left:10px;
+    padding-bottom:10px;
+}
+.box-body .chat-history {
+    overflow-x:hidden;
+    overflow-y: scroll;
+    width:400px;
+    height:350px;
+    padding-left: 10px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #d2d0d0;
+}
+.chat-history p{
+    color:#4f5a62;
+    margin-left:20px;
+    font-size:16px;
+}
+.msg-wrapper p {
+    margin-top:  6px;
+    margin-bottom:0;
+    padding-bottom:10px;
+    border-radius:4px 4px 4px 4px;
+    width:350px;
+    line-height:30px;
+    font-size:14px;
+    background-color:#e5eaec;
+    color:#4f5a62;
+}
+.footer{
+    background:lightblue;
+}
+.footer textarea {
+    margin: 10px 50px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+}
+.footer button{
+    width:60px;
+    height:32px;
+    position:absolute;
+    right:50px;
+    bottom:15px;
+}
+.header ul li a{
+    color:#ffffff;
+}
+/*客户输入的内容样式*/
+.msgFrame{
+    width:200px;
+    height:20px;
+    margin-right:20px;
+    float:right;
+}
+.content_1{
+    width:200px;
+    height:30px;
+    margin-top:10px;
+}
+
+.content_1 .mainInfo{
+    width:100%;
+    height:30px;
+}
+.userId{
+    width: 100%;
+    font-size: 14px;
+
+}
+.userId a{
+    text-decoration:none;
+    float:right;
+    font-size:14px;
+    color:#000;
+}
+.conInfo{
+    border-radius:4px 4px 4px 4px;
+    float:right;
+    padding-left:6px;
+    padding-right:6px;
+    margin-right:10px;
+    line-height:30px;
+    font-size:14px;
+    background-color:#e5eaec;
+    color:#4f5a62;
+}
+.time{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    float:right;
+    margin-top:10px;
+}

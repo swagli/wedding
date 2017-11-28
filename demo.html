@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>套装展示</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/demo.css"/>
+</head>
+<div id="head"></div>
+<br>
+<!--广告轮播-->
+    <div class="container">
+        <div id="ad" class="carousel" data-ride="carousel" data-interval="3000" data-pause="null">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/activity/1.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="img/activity/2.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="img/activity/3.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="img/activity/4.jpg"/>
+                </div>
+                </div>
+                <ul class="carousel-indicators" >
+                    <li data-slide-to="0" data-target="#ad" class="active"></li>
+                    <li data-slide-to="1" data-target="#ad"></li>
+                    <li data-slide-to="2" data-target="#ad"></li>
+                    <li data-slide-to="3" data-target="#ad"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--套装导航-->
+    <div class="container" >
+        <div class="row" id="navigation" >
+            <div class="col-xs-3 col-md-3 ">
+                <li class="active"><a data-toggle="item" href="#intr1">复古中国红</a></li>
+            </div>
+            <div class="col-xs-3 col-md-3">
+                <li><a data-toggle="item" href="#intr2">唯美清新</a></li>
+            </div>
+            <div class="col-xs-3 col-md-3">
+                <li><a data-toggle="item" href="#intr3">潮流街拍</a></li>
+            </div>
+            <div class="col-xs-3 col-md-3">
+                <li><a data-toggle="item" href="#intr4">韩式潮流</a></li>
+            </div>
+        </div>
+    </div>
+<!--套装展示-->
+    <div class="container">
+        <div class="row box active" id="intr1">
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/1-4.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/1-5.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/1-6.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/1-7.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row box" id="intr2">
+            <div class=" col-xs-6 col-md-3 ">
+                <img src="img/activity/2-5.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/2-6.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/2-7.jpg" alt=""/>
+            </div>
+            <div class=" col-xs-6 col-md-3 ">
+                <img src="img/activity/2-8.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row box" id="intr3">
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/3-3.jpg" alt=""/>
+            </div>
+            <div class=" col-md-3">
+                <img src="img/activity/3-4.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/3-5.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/3-6.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row box" id="intr4">
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/4-3.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/4-4.jpg" alt=""/>
+            </div>
+            <div class=" col-xs-6 col-md-3 ">
+                <img src="img/activity/4-5.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 col-md-3 ">
+                <img src="img/activity/4-6.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<hr>
+<div id="footer"></div>
+<div id="msg2"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootlint.js"></script>
+    <script>
+        $("#navigation>div>li").on("click ","[data-toggle=item]",e=>{
+            e.preventDefault();
+            var $item=$(e.target);
+            if(!$item.parent().hasClass("active")){
+                $item.parent().addClass("active").parent().siblings().children().removeClass("active");
+                $($item.attr("href")).addClass("active").siblings().removeClass("active");
+            }
+        });
+        $('#head').load('header.html');
+        $('#msg2').load('chat.html');
+        $('#footer').load('footer.html');
+    </script>
+</body>
+</html>
