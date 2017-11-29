@@ -1,4 +1,5 @@
 <?php
+  header('Access-Control-Allow-Origin:*');
   //1:修改响应头的格式json
   header("Content-Type:application/json;CHARSET=utf-8");
   //2:创建数据库连接
